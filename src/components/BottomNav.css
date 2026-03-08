@@ -1,0 +1,97 @@
+/* BOTTOM NAV BAR */
+
+.bottom-nav {
+
+  position: fixed;
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  height: 65px;
+
+  background: white;
+
+  display: flex;
+
+  justify-content: space-around;
+  align-items: center;
+
+  border-top: 1px solid #ddd;
+
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.15);
+
+  z-index: 1000;
+
+  /* Prevent overlap on mobile safe area */
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+
+/* NAV ITEM */
+
+.nav-item {
+
+  flex: 1;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+
+  color: #777;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+  height: 100%;
+}
+
+
+.nav-icon {
+
+  font-size: 20px;
+
+  margin-bottom: 2px;
+}
+
+
+/* ACTIVE */
+
+.nav-item.active {
+
+  color: #1976d2;
+
+  font-weight: 600;
+}
+
+
+.nav-item.active .nav-icon {
+
+  transform: scale(1.15);
+}
+
+
+/* MOBILE FIX */
+
+@media (max-width: 360px) {
+
+  .nav-icon {
+    font-size: 18px;
+  }
+
+}
+
+
+/* ================= IMPORTANT FIX ================= */
+/* Push page content ABOVE bottom bar */
+
+body {
+  padding-bottom: 65px;
+  box-sizing: border-box;
+}

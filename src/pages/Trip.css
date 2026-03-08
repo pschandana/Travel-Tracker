@@ -1,0 +1,249 @@
+/* MAIN CONTAINER */
+.trip-container {
+
+  max-width: 650px;
+
+  margin: 25px auto;
+
+  padding: 25px;
+
+  background: linear-gradient(135deg,#e3f2fd,#fce4ec);
+
+  border-radius: 20px;
+
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+/* TITLE */
+.trip-container h2 {
+
+  text-align: center;
+
+  font-size: 24px;
+
+  color: #0d47a1;
+
+  margin-bottom: 20px;
+
+  text-shadow: 1px 1px 2px #aaa;
+}
+
+
+/* STEPS */
+.steps {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+
+  background: white;
+
+  padding: 8px;
+
+  border-radius: 12px;
+
+  box-shadow: inset 0 0 5px #ccc;
+}
+
+
+.step {
+
+  flex: 1;
+
+  text-align: center;
+
+  padding: 7px;
+
+  font-size: 13px;
+
+  border-radius: 8px;
+
+  background: #eeeeee;
+
+  color: #555;
+
+  margin: 0 4px;
+
+  transition: 0.3s;
+}
+
+
+.step.active {
+
+  background: linear-gradient(45deg,#1976d2,#64b5f6);
+
+  color: white;
+
+  font-weight: bold;
+
+  box-shadow: 0 0 8px #64b5f6;
+}
+
+
+.step.done {
+
+  background: linear-gradient(45deg,#2e7d32,#66bb6a);
+
+  color: white;
+
+  font-weight: bold;
+}
+
+
+/* BUTTON AREA */
+.control-box {
+
+  text-align: center;
+
+  margin-bottom: 15px;
+}
+
+
+/* BUTTONS */
+.btn {
+
+  border: none;
+
+  padding: 10px 22px;
+
+  border-radius: 25px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  margin: 6px;
+
+  transition: 0.3s;
+}
+
+
+.btn.start {
+
+  background: linear-gradient(45deg,#43a047,#81c784);
+
+  color: white;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+.btn.stop {
+
+  background: linear-gradient(45deg,#d32f2f,#ef5350);
+
+  color: white;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+
+.btn.save {
+
+  background: linear-gradient(45deg,#1565c0,#42a5f5);
+
+  color: white;
+
+  width: 100%;
+
+  margin-top: 10px;
+}
+
+
+.btn:hover {
+
+  transform: scale(1.05);
+
+  opacity: 0.95;
+}
+
+
+/* STATS */
+.stats {
+
+  text-align: center;
+
+  font-size: 16px;
+
+  font-weight: bold;
+
+  margin-bottom: 10px;
+
+  color: #263238;
+}
+
+
+/* MAP */
+.map-box {
+
+  margin: 12px 0;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  border: 3px solid white;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+
+/* SAVE PANEL */
+.save-box {
+
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 15px;
+
+  margin-top: 20px;
+
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+
+.save-box h3 {
+
+  text-align: center;
+
+  margin-bottom: 12px;
+
+  color: #1b5e20;
+}
+
+
+/* INPUTS */
+.save-box select,
+.save-box input {
+
+  width: 100%;
+
+  padding: 10px;
+
+  margin: 8px 0;
+
+  border-radius: 8px;
+
+  border: 1px solid #bbb;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+
+.save-box select:focus,
+.save-box input:focus {
+
+  outline: none;
+
+  border-color: #1976d2;
+
+  box-shadow: 0 0 5px #1976d2;
+}

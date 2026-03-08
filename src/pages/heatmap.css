@@ -1,0 +1,171 @@
+.region-filter {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .region-filter input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .suggestion-box {
+    position: absolute;
+    width: 100%;
+    background: #1e1e1e;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  
+  .suggestion {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .suggestion:hover {
+    background: #333;
+  }
+  
+  .radius-slider {
+    margin-bottom: 10px;
+  }
+  
+  .map-wrapper {
+    position: relative;
+  }
+  
+  .legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  .legend-bar {
+    width: 150px;
+    height: 8px;
+    margin: 0 8px;
+    background: linear-gradient(to right,
+      #2c7bb6,
+      #00a6ca,
+      #fdae61,
+      #f46d43,
+      #d73027);
+  }
+  
+  .mode-panel {
+    margin-top: 15px;
+    padding: 15px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 12px;
+  }
+  
+  .mode-item {
+    margin-bottom: 10px;
+  }
+  
+  .mode-label {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .mode-bar {
+    background: #333;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .mode-fill {
+    background: #4BC0C0;
+    height: 100%;
+  }
+
+  .toggle-container {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-container button {
+    flex: 1;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    background: #222;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .toggle-container button:hover {
+    background: #444;
+  }
+  
+  .legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+  }
+  
+  .legend-bar {
+    width: 150px;
+    height: 8px;
+    margin: 0 8px;
+    background: linear-gradient(
+      to right,
+      #2b83ba,
+      #00ffcc,
+      #ffff00,
+      #ff9900,
+      #ff0000
+    );
+  }
+  
+  .pulse-marker {
+    animation: pulse 1.5s infinite;
+    fill: rgba(255, 0, 0, 0.4);
+  }
+  
+  @keyframes pulse {
+    0% {
+      r: 10;
+      opacity: 1;
+    }
+    50% {
+      r: 25;
+      opacity: 0.4;
+    }
+    100% {
+      r: 10;
+      opacity: 1;
+    }
+  }
+  
+  .mode-bar {
+    background: #333;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .mode-fill {
+    background: #ff4d4f;
+    height: 100%;
+  }
+
+  /* Make map look smoother like professional dashboards */
+
+.leaflet-container {
+    filter: saturate(1.2) contrast(1.05);
+  }
+  
+  /* Slight soft shadow for depth */
+  
+  .leaflet-pane {
+    transition: all 0.3s ease-in-out;
+  }

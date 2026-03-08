@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "788159558771",
+    "project_id": "travel-tracker-e65c3",
+    "storage_bucket": "travel-tracker-e65c3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788159558771:android:a98c9317a36d9783a2a606",
+        "android_client_info": {
+          "package_name": "com.raviteja.traveltracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1csNhhFEVJBOFAfSBjn2qD0zGqi0gnKo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,79 @@
+/* ===============================
+   WHITE GLASS MORPHISM NAVBAR
+================================= */
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  /* Glass effect */
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+  z-index: 1000;
+
+  box-shadow: 0 -8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Icons */
+.bottom-nav a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #555;
+  transition: all 0.3s ease;
+}
+
+/* Active tab */
+.bottom-nav a.active {
+  color: #0077ff;
+  transform: translateY(-4px);
+}
+
+/* Hover */
+.bottom-nav a:hover {
+  color: #000;
+}
+
+/* Logout */
+.bottom-nav button {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff4d4d;
+  transition: 0.3s ease;
+}
+
+.bottom-nav button:hover {
+  transform: translateY(-4px);
+}
+
+/* ===============================
+   VERY IMPORTANT FIX
+================================= */
+
+/* Instead of body padding, use a content wrapper */
+.page-content {
+  padding-bottom: 90px; /* bigger than navbar height */
+}
+
+/* Mobile tweak */
+@media (max-width: 768px) {
+  .bottom-nav {
+    height: 75px;
+  }
+
+  .page-content {
+    padding-bottom: 100px;
+  }
+}

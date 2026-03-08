@@ -1,0 +1,204 @@
+/* MAIN */
+.register-container {
+
+  min-height: 100vh;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #e0f2fe,
+    #f8fafc,
+    #ffffff
+  );
+
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+
+/* CARD */
+.register-card {
+
+  width: 100%;
+  max-width: 400px;
+
+  background: rgba(255,255,255,0.85);
+
+  backdrop-filter: blur(12px);
+
+  padding: 30px 25px;
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+  text-align: center;
+
+  animation: fadeIn 0.4s ease;
+}
+
+
+
+/* ANIMATION */
+@keyframes fadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* TITLE */
+.register-card h2 {
+
+  color: #1d4ed8;
+
+  font-size: 26px;
+
+  font-weight: 700;
+
+  margin-bottom: 5px;
+}
+
+
+
+/* SUB */
+.subtitle {
+
+  font-size: 13px;
+
+  color: #64748b;
+
+  margin-bottom: 22px;
+}
+
+
+
+/* INPUT */
+.register-card input {
+
+  width: 100%;
+
+  padding: 12px 14px;
+
+  margin-bottom: 14px;
+
+  border-radius: 10px;
+
+  border: 1px solid #cbd5f5;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: 0.2s;
+}
+
+
+.register-card input:focus {
+
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+}
+
+
+
+/* BUTTON */
+.register-card button {
+
+  width: 100%;
+
+  padding: 13px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #3b82f6
+  );
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  margin-top: 8px;
+
+  transition: 0.25s;
+}
+
+
+.register-card button:hover {
+
+  transform: scale(1.03);
+
+  background: linear-gradient(
+    135deg,
+    #1d4ed8,
+    #2563eb
+  );
+}
+
+
+
+/* LOGIN LINK */
+.login-link {
+
+  margin-top: 18px;
+
+  font-size: 13px;
+
+  color: #475569;
+}
+
+
+.login-link span {
+
+  color: #2563eb;
+
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+
+.login-link span:hover {
+  text-decoration: underline;
+}
+
+
+
+/* MOBILE */
+@media (max-width: 420px) {
+
+  .register-card {
+
+    padding: 25px 20px;
+  }
+
+
+  .register-card h2 {
+    font-size: 22px;
+  }
+
+}

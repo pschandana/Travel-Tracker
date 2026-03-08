@@ -1,0 +1,141 @@
+/* ===============================
+   FULL PAGE BACKGROUND
+================================= */
+
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: linear-gradient(
+      135deg,
+      #eaf4ff,
+      #f4f9ff,
+      #ffffff
+    );
+  
+    padding: 20px;
+  }
+  
+  /* ===============================
+     GLASS LOGIN CARD
+  ================================= */
+  
+  .auth-card {
+    width: 100%;
+    max-width: 400px;
+  
+    padding: 40px 30px;
+    border-radius: 20px;
+  
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  
+    box-shadow:
+      0 15px 40px rgba(0, 0, 0, 0.08);
+  
+    border: 1px solid rgba(255, 255, 255, 0.4);
+  
+    transition: 0.3s ease;
+  }
+  
+  .auth-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* ===============================
+     TITLE
+  ================================= */
+  
+  .auth-card h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* ===============================
+     INPUT FIELDS
+  ================================= */
+  
+  .auth-card input {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 18px;
+  
+    border-radius: 10px;
+    border: 1px solid #ddd;
+  
+    outline: none;
+    font-size: 14px;
+  
+    transition: 0.3s ease;
+  }
+  
+  .auth-card input:focus {
+    border-color: #0077ff;
+    box-shadow: 0 0 0 3px rgba(0,119,255,0.1);
+  }
+  
+  /* ===============================
+     ERROR TEXT
+  ================================= */
+  
+  .error {
+    color: #ff4d4d;
+    font-size: 13px;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  
+  /* ===============================
+     LOGIN BUTTON
+  ================================= */
+  
+  .auth-card button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+  
+    border: none;
+    cursor: pointer;
+  
+    font-weight: 600;
+    font-size: 14px;
+  
+    background: linear-gradient(90deg, #0077ff, #00c6ff);
+    color: white;
+  
+    transition: 0.3s ease;
+  }
+  
+  .auth-card button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,119,255,0.3);
+  }
+  
+  .auth-card button:active {
+    transform: translateY(0);
+  }
+  
+  /* ===============================
+     MOBILE OPTIMIZATION
+  ================================= */
+  
+  @media (max-width: 768px) {
+  
+    .auth-card {
+      padding: 30px 20px;
+    }
+  
+    .auth-card h2 {
+      font-size: 20px;
+    }
+  
+    .auth-card input {
+      font-size: 13px;
+    }
+  
+  }

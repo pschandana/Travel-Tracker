@@ -1,0 +1,90 @@
+.peak-title {
+    margin-bottom: 10px;
+  }
+  
+  .peak-search {
+    position: relative;
+    margin-bottom: 10px;
+  }
+  
+  .peak-search input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .peak-suggestions {
+    position: absolute;
+    width: 100%;
+    background: #1e1e1e;
+    max-height: 200px;
+    overflow-y: auto;
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  
+  .peak-suggestion-item {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .peak-suggestion-item:hover {
+    background: #333;
+  }
+  
+  .peak-map-wrapper {
+    margin-bottom: 15px;
+  }
+  
+  .peak-result-card {
+    background: rgba(255,255,255,0.05);
+    padding: 15px;
+    border-radius: 15px;
+  }
+  
+  .peak-hour-box,
+  .trip-count-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .mode-section {
+    margin-top: 10px;
+  }
+  
+  .mode-bar-wrapper {
+    margin-bottom: 8px;
+  }
+  
+  .mode-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+  
+  .mode-bar-bg {
+    background: #333;
+    height: 8px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .mode-bar-fill {
+    background: linear-gradient(to right, #ff9900, #ff0000);
+    height: 100%;
+  }
+
+  .date-filter {
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .date-filter input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+  }

@@ -1,0 +1,211 @@
+/* MAIN CARD */
+.profile {
+
+  max-width: 450px;
+
+  margin: 40px auto;
+
+  padding: 25px;
+
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+
+  border-radius: 18px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+/* HEADER */
+.profile-header {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+
+.profile-header h2 {
+
+  color: #1a237e;
+}
+
+
+.profile-header button {
+
+  background: #e53935;
+
+  color: white;
+
+  border: none;
+
+  padding: 6px 12px;
+
+  border-radius: 6px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+}
+
+
+.profile-header button:hover {
+  background: #b71c1c;
+}
+
+
+/* PHOTO */
+.photo-box {
+
+  text-align: center;
+
+  margin-bottom: 20px;
+}
+
+
+.photo-box img {
+
+  width: 120px;
+  height: 120px;
+
+  border-radius: 50%;
+
+  object-fit: cover;
+
+  border: 4px solid #1976d2;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+
+.upload-btn {
+
+  display: inline-block;
+
+  margin-top: 10px;
+
+  padding: 6px 15px;
+
+  background: #1976d2;
+
+  color: white;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  font-size: 13px;
+}
+
+
+.upload-btn:hover {
+  background: #0d47a1;
+}
+
+
+/* INFO */
+.info {
+
+  background: white;
+
+  padding: 15px;
+
+  border-radius: 10px;
+
+  margin-bottom: 20px;
+
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+
+  font-size: 15px;
+}
+
+
+.info p {
+  margin: 6px 0;
+}
+
+
+/* PASSWORD BOX */
+.password-box {
+
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+
+.password-box h3 {
+
+  margin-bottom: 10px;
+
+  color: #37474f;
+}
+
+
+.password-box input {
+
+  width: 95%;
+
+  padding: 9px;
+
+  margin: 8px 0;
+
+  border-radius: 7px;
+
+  border: 1px solid #bbb;
+
+  font-size: 14px;
+}
+
+
+.password-box input:focus {
+
+  outline: none;
+
+  border-color: #1976d2;
+
+  box-shadow: 0 0 3px #1976d2;
+}
+
+
+.password-box button {
+
+  width: 100%;
+
+  margin-top: 10px;
+
+  padding: 9px;
+
+  background: #388e3c;
+
+  border: none;
+
+  color: white;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  cursor: pointer;
+}
+
+
+.password-box button:hover {
+  background: #1b5e20;
+}
+.page {
+
+  background: var(--bg-main);
+  color: var(--text-main);
+
+  min-height: 100vh;
+}
